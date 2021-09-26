@@ -1,3 +1,8 @@
+global start
+extern kernel_entry 
+
+
+
 section .multiboot
 _start:
 	dd 0xE85250D6     ; magic number
