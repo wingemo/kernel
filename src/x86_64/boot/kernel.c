@@ -3,8 +3,7 @@ void kernel_entry() {
     volatile unsigned char *vid = (unsigned char*)0xb8000;
     int index = 0;
 
-    while(*string != 0)
-    {
+    while(*string != 0) {
         *(vid) = *string;
         ++string;
         vid+=2;
