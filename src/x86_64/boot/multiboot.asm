@@ -5,7 +5,7 @@ section .bss
     resb 8192                        
     stack:
 
-section .multiboot
+section .boot
 _start:
     dd 0xE85250D6     ; magic number
     dd 0              ; protected mode code
