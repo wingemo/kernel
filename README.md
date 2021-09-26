@@ -2,6 +2,6 @@
 
 ## Insperation
 
-https://github.com/RockoonTechnologies/Kernel
-https://github.com/pritamzope/OS
-https://github.com/davidcallanan/os-series
+- https://github.com/RockoonTechnologies/Kernel
+- https://github.com/pritamzope/OS
+- https://github.com/davidcallanan/os-series
