@@ -4,15 +4,9 @@ SECTIONS
 {
 	. = 1M;
 
-	.boot :
-	{
-		KEEP(*(.multiboot))
-	}
+	.boot : { KEEP(*(.multiboot)) }
 
-	.text :
-	{
-		*(.text)
-	}
+	.text : { *(.text) }
 
 	.bss  : { *(.bss)  }
 
