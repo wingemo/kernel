@@ -4,7 +4,7 @@ SECTIONS
 {
 	. = 1M;
 
-	.boot : { KEEP(*(.multiboot)) }
+	.boot : { KEEP(*(.boot)) }
 
 	.text : { *(.text) }
 
