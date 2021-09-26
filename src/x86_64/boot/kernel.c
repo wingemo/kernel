@@ -15,6 +15,3 @@ void kernel_entry() {
         index += 2;
     }
 }
-    
-
-
