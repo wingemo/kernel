@@ -1,6 +1,10 @@
 global start
 extern kernel_entry 
 
+section .bss
+    resb 8192                        
+    stack:
+    
 section .boot
 _start:
     dd 0xE85250D6     ; magic number
@@ -12,10 +16,6 @@ _start:
     dd 8  ; size
 _end:
 
-section .bss
-    resb 8192                        
-    stack:
-    
 section .text
 bits 32s
 start:
