@@ -10,7 +10,7 @@ void kernel_entry() {
         vid+=2;
     }
 
-      while (index < 80 * 25 * 2) {
+    while (index < 80 * 25 * 2) {
         *(vid) = ' ';
         vid+=2;
         index += 2;
