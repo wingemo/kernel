@@ -2,8 +2,8 @@ global start
 extern kernel_entry 
 
 section .bss
-    resb 8192                        
-    stack:
+   resb 8192                        
+   stack:
 
 section .text
 bits 32s
