@@ -1,7 +1,9 @@
 global start
 extern kernel_entry 
 
-
+section .bss
+    resb 8192                        
+    stack:
 
 section .multiboot
 _start:
