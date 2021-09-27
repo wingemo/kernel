@@ -1,2 +1,8 @@
+#define MSG "Hello World!"
 
-start_kernel()
+void start_kernel() {
+  clear_screen();
+  output_screen();
+  input_keyboard();
+}
+
