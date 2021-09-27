@@ -5,3 +5,4 @@
 - https://github.com/RockoonTechnologies/Kernel
 - https://github.com/pritamzope/OS
 - https://github.com/davidcallanan/os-series
+- https://www.youtube.com/watch?v=hseFqtRpK0M
