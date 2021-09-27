@@ -1,5 +1,5 @@
 #define MSG "Hello World!"
-
+char * c;
 void kernel_entry() {
   clear_screen();
   video_write(MSG);
@@ -39,6 +39,9 @@ void keyboard() {
   while ((inputdata = inb())) {
     if (inputdata == 0x11) {
       video_write("w");
-    }
+    } 
+    if (inputdata == 0x19) {
+      video_write("p");
+    } 
   }
 }
