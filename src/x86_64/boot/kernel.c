@@ -2,7 +2,7 @@
 char * c;
 void kernel_entry() {
   clear_screen();
-  video_write(MSG);
+  output_screen();
   input_keyboard();
 }
 
@@ -15,7 +15,7 @@ void clear_screen() {
   }
 }
 
-void video_write(const unsigned char * string) {
+void output_screen(const unsigned char * string) {
   unsigned char * p = (unsigned char * ) string;
   p++;
   char * c = (char * )(0xb8000);
