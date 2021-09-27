@@ -28,20 +28,17 @@ void video_write(const unsigned char * string) {
   }
 }
 
-
-unsigned char inb()
-{
+unsigned char inb() {
   unsigned char ret;
-  asm volatile("inb %1, %0" : "=a"(ret) : "dN"(0x60));
+  asm volatile("inb %1, %0": "=a"(ret): "dN"(0x60));
   return ret;
 }
 
-void keyboard()
-{
-    unsigned char inputdata;
-    while((inputdata = inb())){
-        if (inputdata == 0x11) {
-            video_write("w");
-        }
+void keyboard() {
+  unsigned char inputdata;
+  while ((inputdata = inb())) {
+    if (inputdata == 0x11) {
+      video_write("w");
     }
+  }
 }
