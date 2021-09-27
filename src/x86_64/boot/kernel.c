@@ -3,7 +3,7 @@ char * c;
 void kernel_entry() {
   clear_screen();
   video_write(MSG);
-  keyboard();
+  input_keyboard();
 }
 
 void clear_screen() {
@@ -34,7 +34,7 @@ unsigned char inb() {
   return ret;
 }
 
-void keyboard() {
+void input_keyboard() {
   unsigned char inputdata;
   while ((inputdata = inb())) {
     if (inputdata == 0x11) {
