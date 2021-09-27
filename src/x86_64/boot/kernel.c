@@ -14,7 +14,6 @@ void clear_screen(){
     }        
 }
 
-
 void video_write(const unsigned char *string){                                                                 
     unsigned char *p = (unsigned char*) string;       
     p++;                                            
