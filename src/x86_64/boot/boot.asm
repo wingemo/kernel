@@ -10,6 +10,6 @@ section .bss
  bits 32s
  start:
     cli
-    mov esp, stack  
+    mov  esp, stack  
     call kernel_start
     hlt                     
