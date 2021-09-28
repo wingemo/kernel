@@ -1,5 +1,5 @@
-/* CPU control.
- * (C) 2001, 2002, 2003, 2004 Rusty Russell
+/* Screen Driver.
+ * (C) 2021 Philip Wingemo
  *
  * This code is licenced under the GPL.
  */
