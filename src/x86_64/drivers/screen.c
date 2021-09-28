@@ -5,8 +5,7 @@
  */
 
 /*
- * The following two APIs (cpu_maps_update_begin/done) must be used when
- * attempting to serialize the updates to cpu_online_mask & cpu_present_mask.
+ *  Function to output data to the standard output device (screen).
  */
 void print(const unsigned char * string) {
   unsigned char * p = (unsigned char * ) string;
