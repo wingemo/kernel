@@ -4,8 +4,6 @@
  * This code is licenced under the GPL.
  */
 
-#define MSG "Loading....!"
-
 /*
  * The following two APIs (cpu_maps_update_begin/done) must be used when
  * attempting to serialize the updates to cpu_online_mask & cpu_present_mask.
