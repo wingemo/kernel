@@ -12,7 +12,7 @@
  */
 void start_kernel() {
   clear_screen();
-  output_screen();
-  input_keyboard();
+  print(MSG);
+  start_bash();
 }
 
