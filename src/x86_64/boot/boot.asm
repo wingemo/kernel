@@ -6,13 +6,16 @@ section .bss
      stack:
 
  section .text
- org 0x7c00
+ org  0
  bits 32s
  start:
     cli ; Clear Interrupts
     mov ax, 0x7c00
     mov ds, ax
     mov es, ax
+    mov ax, 0x00
+    mov ss, ax
+    mov sp, 0x7c00
     sti ; Enables Interrupts
     mov esp, stack  
     call kernel_start
