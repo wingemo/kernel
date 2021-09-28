@@ -8,7 +8,7 @@
  * The following two APIs (cpu_maps_update_begin/done) must be used when
  * attempting to serialize the updates to cpu_online_mask & cpu_present_mask.
  */
-unsigned char read_keyboard() {
+unsigned char input() {
   unsigned char ret;
   asm volatile("inb %1, %0": "=a"(ret): "dN"(0x60));
   return ret;
