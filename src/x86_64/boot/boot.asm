@@ -9,7 +9,9 @@ section .bss
  org 0x7c00
  bits 32s
  start:
-    cli                     
+    cli ; Clear Interrupts
+    
+    sti ; Enables Interrupts
     mov esp, stack  
     call kernel_start
     hlt                     
