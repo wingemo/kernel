@@ -6,6 +6,7 @@ section .bss
      stack:
 
  section .text
+ org 0x7c00
  bits 32s
  start:
     cli                     
