@@ -4,7 +4,7 @@
  */
 
 /*
- * User input from Keyboard
+ * Function to get user input from Keyboard
  */
 unsigned char input() {
   unsigned char ret;
