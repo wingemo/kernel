@@ -11,8 +11,7 @@
  * attempting to serialize the updates to cpu_online_mask & cpu_present_mask.
  */
 void start_kernel() {
-  cls();
-  print(MSG);
+  clear();
   start_bash();
 }
 
