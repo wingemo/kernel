@@ -20,7 +20,7 @@ void print(const unsigned char * string) {
 }
 
 /*
- * Clear video buffer array
+ * Function to clear video buffer array
  */
 void clear() {
   char * p = (char * ) 0xb8000;
