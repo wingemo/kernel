@@ -1,12 +1,3 @@
-void clear_screen() {
-  char * p = (char * ) 0xb8000;
-  int i = 0;
-  for (i; i < 4000; i++) {
-    * p = '\0';
-    p++;
-  }
-}
-
 void print(const unsigned char * string) {
   unsigned char * p = (unsigned char * ) string;
   p++;
@@ -16,6 +7,15 @@ void print(const unsigned char * string) {
     c++;
     * c = 0x07;
     c++;
+    p++;
+  }
+}
+
+void clear_screen() {
+  char * p = (char * ) 0xb8000;
+  int i = 0;
+  for (i; i < 4000; i++) {
+    * p = '\0';
     p++;
   }
 }
