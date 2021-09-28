@@ -10,7 +10,9 @@ section .bss
  bits 32s
  start:
     cli ; Clear Interrupts
-    
+    mov ax, 0x7c00
+    mov ds, ax
+    mov es, ax
     sti ; Enables Interrupts
     mov esp, stack  
     call kernel_start
