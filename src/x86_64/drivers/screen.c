@@ -4,9 +4,6 @@
  * This code is licenced under the GPL.
  */
 
-uint16_t terminal_row = 0;
-uint16_t terminal_col = 0;
-
 /*
  * The following two APIs (cpu_maps_update_begin/done) must be used when
  * attempting to serialize the updates to cpu_online_mask & cpu_present_mask.
