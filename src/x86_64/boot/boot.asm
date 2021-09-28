@@ -18,6 +18,7 @@ section .bss
     mov ss, ax
     mov sp, 0x7c00
     sti                      ; Enables Interrupts
+ kernel:
     mov esp, stack  
     call kernel_start
     hlt                     
