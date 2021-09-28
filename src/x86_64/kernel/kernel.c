@@ -4,7 +4,7 @@
  * This code is licenced under the GPL.
  */
 
-#define MSG "Hello World!"
+#define MSG "Loading....!"
 
 /*
  * The following two APIs (cpu_maps_update_begin/done) must be used when
