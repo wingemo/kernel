@@ -4,7 +4,7 @@ unsigned char inb() {
   return ret;
 }
 
-void input_keyboard() {
+void listen_keyboard() {
   unsigned char inputdata;
   while ((inputdata = inb())) {
     if (inputdata == 0x11) {
