@@ -1,3 +1,10 @@
+global start
+extern kernel_start
+
+section .bss
+     resb 8192                        
+     stack:
+
 section .multiboot
 _start:
 	dd 0xE85250D6     ; magic number
@@ -8,3 +15,11 @@ _start:
 	dw 0  ; flags
 	dd 8  ; size
 _end:
+
+ section .text
+ bits 32s
+ start:
+    cli                     
+    mov esp, stack    
+    call kernel_start
+    hlt                     
