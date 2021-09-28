@@ -25,7 +25,7 @@ void print(const unsigned char * string) {
  * The following two APIs (cpu_maps_update_begin/done) must be used when
  * attempting to serialize the updates to cpu_online_mask & cpu_present_mask.
  */
-void clear_screen() {
+void cls() {
   char * p = (char * ) 0xb8000;
   int i = 0;
   for (i; i < 4000; i++) {
