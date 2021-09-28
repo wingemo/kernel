@@ -7,7 +7,7 @@ void clear_screen() {
   }
 }
 
-void output_screen(const unsigned char * string) {
+void print(const unsigned char * string) {
   unsigned char * p = (unsigned char * ) string;
   p++;
   char * c = (char * )(0xb8000);
