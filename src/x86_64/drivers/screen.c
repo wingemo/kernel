@@ -1,7 +1,6 @@
 /* Screen Driver.
  * (C) 2021 Philip Wingemo
  *
- * This code is licenced under the GPL.
  */
 
 /*
